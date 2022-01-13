@@ -1,0 +1,82 @@
+{
+  "name": "edit-ag-grid",
+  "version": "0.0.0-1",
+  "description": "high performance、complex interaction table",
+  "author": "wheel-team",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why",
+    "release": "release-it"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "module": "dist/edit-ag-grid.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/edit-ag-grid.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/edit-ag-grid.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "@release-it/conventional-changelog": "^3.3.0",
+    "@size-limit/preset-small-lib": "^6.0.3",
+    "@types/lodash-es": "^4.14.176",
+    "@types/react": "^17.0.33",
+    "@types/react-dom": "^17.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "antd": "^4.16.13",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-typescript": "^2.4.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4",
+    "husky": "^7.0.4",
+    "less": "^4.1.2",
+    "lodash-es": "^4.17.21",
+    "postcss-modules": "^4.2.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "release-it": "^14.11.6",
+    "rollup-plugin-postcss": "^4.0.1",
+    "size-limit": "^6.0.3",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.4"
+  }
+}

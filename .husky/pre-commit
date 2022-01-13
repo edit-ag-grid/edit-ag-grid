@@ -1,0 +1,15 @@
+#!/bin/bash
+
+exit_code=0
+
+for file in $(git diff --cached --name-only | grep -E '\.(js|jsx|ts|tsx)$')
+do
+  git show ":$file" | node_modules/.bin/eslint --stdin --stdin-filename  "$file"
+  if [ $? -ne 0 ]; then
+    exit_code=1
+  fi
+done
+if [ $exit_code -eq 1 ]; then
+  echo "待提交文件 eslint校验 失败，请修复问题后重新提交。"
+  exit 1
+fi
