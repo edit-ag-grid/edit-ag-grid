@@ -14,13 +14,14 @@ module.exports = {
     }
     config.plugins.push(
       postcss({
+        plugins: [],
         inject: true,
         extract: !!options.writeMeta,
         // modules: true, // 使用css modules
         // namedExport: true, // 类名导出
         camelCase: true, // 支持驼峰
         // sass: true, // 是否使用sass
-        less:true,
+        less: true,
         // autoModules:true,
         // namedExports(name) {
         //   // Maybe you simply want to convert dash to underscore

@@ -1,14 +1,12 @@
-import 'react-app-polyfill/ie11';
+/* eslint-disable import/no-extraneous-dependencies */
+// import 'react-app-polyfill/ie11';
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-import { Thing } from '../.';
+import { render } from 'react-dom';
+
+import './index.less';
+import Thing from '..';
 
 const App = () => {
-  return (
-    <div>
-      <Thing />
-    </div>
-  );
+  return <Thing />;
 };
-
-ReactDOM.render(<App />, document.getElementById('root'));
+render(<App />, document.getElementById('root'));
