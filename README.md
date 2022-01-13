@@ -1,7 +1,11 @@
 ## 功能描述
 1、高性能、满足复杂交互的编辑表格
 
-2、基于antd4(https://ant.design/index-cn)、ag-grid(https://www.ag-grid.com/)
+2、基于:
+
+antd4(https://ant.design/index-cn)
+
+ag-grid(https://www.ag-grid.com/)
 
 3、基于原生ag-grid 的API进行封装
 
