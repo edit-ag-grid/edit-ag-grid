@@ -1,90 +1,98 @@
 {
   "env": {
-      "browser": true,
-      "es2021": true
+    "browser": true,
+    "es2021": true
   },
   "extends": [
-      "plugin:react/recommended",
-      "airbnb",
-      "plugin:prettier/recommended"
+    "plugin:react/recommended",
+    "airbnb",
+    "plugin:prettier/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-      "ecmaFeatures": {
-          "jsx": true
-      },
-      "ecmaVersion": 12,
-      "sourceType": "module"
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
   },
-  "plugins": [
-      "react",
-      "react-hooks",
-      "@typescript-eslint",
-      "prettier"
-  ],
+  "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
   "rules": {
-      "consistent-return": "off",
-      "max-len": ["error", { "code": 120 }],
-      "no-shadow":"off",
-      "no-use-before-define":"off",
-      "no-underscore-dangle": "off",
-      "no-unused-vars": "off",
-      "no-unused-expressions": ["error", {
-          "allowShortCircuit": true,
-          "allowTernary": true
-      }],
-      "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
-      "no-param-reassign": ["error", 
-          { "props": true, "ignorePropertyModificationsForRegex": ["^ras"] }
-      ],
-      "radix": ["error", "as-needed"],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true,
+        "optionalDependencies": false,
+        "peerDependencies": false
+      }
+    ],
+    "consistent-return": "off",
+    "max-len": ["error", { "code": 120 }],
+    "no-shadow": "off",
+    "no-use-before-define": "off",
+    "no-underscore-dangle": "off",
+    "no-unused-vars": "off",
+    "no-unused-expressions": [
+      "error",
+      {
+        "allowShortCircuit": true,
+        "allowTernary": true
+      }
+    ],
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+    "no-param-reassign": [
+      "error",
+      { "props": true, "ignorePropertyModificationsForRegex": ["^ras"] }
+    ],
+    "radix": ["error", "as-needed"],
 
-      "@typescript-eslint/no-shadow": ["error"],
-      "@typescript-eslint/no-unused-vars": ["error"],
-      "@typescript-eslint/no-use-before-define": ["error"],
+    "@typescript-eslint/no-shadow": ["error"],
+    "@typescript-eslint/no-unused-vars": ["error"],
+    "@typescript-eslint/no-use-before-define": ["error"],
 
-      "prettier/prettier": ["error", {
-          "singleQuote": true
-      }, {
-          "fileInfoOptions": {
-              "withNodeModules": true
-          }
-      }],
-      "react-hooks/rules-of-hooks": "error",
-      "react/prop-types": "off",
-      "react/require-default-props": "off",
-      // "react-hooks/exhaustive-deps": "warn",
-      "react/jsx-filename-extension": [ "warn", {"extensions": [".tsx"]} ],
-      "react/jsx-props-no-spreading": ["error", {
-          "custom": "ignore"
-      }],
-      "jsx-a11y/click-events-have-key-events": "off",
-      "jsx-a11y/no-static-element-interactions": "off",
-      "jsx-a11y/anchor-is-valid": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true
+      },
+      {
+        "fileInfoOptions": {
+          "withNodeModules": true
+        }
+      }
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "react/prop-types": "off",
+    "react/require-default-props": "off",
+    // "react-hooks/exhaustive-deps": "warn",
+    "react/jsx-filename-extension": ["warn", { "extensions": [".tsx"] }],
+    "react/jsx-props-no-spreading": [
+      "error",
+      {
+        "custom": "ignore"
+      }
+    ],
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/anchor-is-valid": "off",
 
-      "import/extensions": [
-          "error",
-          "ignorePackages",
-          {
-            "js": "never",
-            "jsx": "never",
-            "ts": "never",
-            "tsx": "never"
-          }
-       ]
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ]
   },
   "settings": {
-      "import/resolver": {
-          "typescript": {},
-          "node": {
-              "extensions": [
-                  ".tsx",
-                  ".ts",
-                  ".d.ts",
-                  ".js",
-                  ".jsx"
-              ]
-          }
-        }
+    "import/resolver": {
+      "typescript": {},
+      "node": {
+        "extensions": [".tsx", ".ts", ".d.ts", ".js", ".jsx"]
+      }
+    }
   }
 }
