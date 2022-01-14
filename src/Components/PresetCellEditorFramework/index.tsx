@@ -35,8 +35,9 @@ const PresetCellEditorFramework: ForwardRefRenderFunction<any, IProps> = (
       refresh() {},
     };
   });
-  const Compoment = defaultFormItemMap[editType];
-  return <Compoment />;
+  const Compoment = defaultFormItemMap[editType]; 
+  // TODO: 透传 props
+  return <Compoment {...props}/>;
 };
 
 export default forwardRef(PresetCellEditorFramework);

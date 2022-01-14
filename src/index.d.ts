@@ -1,4 +1,4 @@
-import { ColDef, GridOptions } from 'ag-grid-community';
+import type { ColDef, GridOptions } from 'ag-grid-community';
 
 const EDIT_TYPE = ['input', 'select'] as const;
 export type EditType = typeof EDIT_TYPE[number];

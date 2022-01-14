@@ -2,9 +2,9 @@ import React, { FC } from 'react';
 import { Input } from 'antd';
 import './index.less';
 
-interface IProps {}
+interface InputProps extends React.ComponentProps<typeof Input> { }
 
-const EditInput: FC<IProps> = () => {
+const EditInput: FC<InputProps> = () => {
   return <Input className="edit-ag-grid-input" />;
 };
 

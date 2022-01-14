@@ -22,9 +22,20 @@ const App = () => {
         {
           field: 'select',
           colId: 'select',
+          width: 500,
           headerName: '选择框',
           cellEditorParams: {
             editType: 'select',
+            options: [
+              {
+                key: 'male',
+                label: '男'
+              },
+              {
+                key: 'female',
+                label: '女'
+              }
+            ]
           },
         },
       ]}

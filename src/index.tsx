@@ -6,7 +6,7 @@ import './index.less';
 import 'ag-grid-community/dist/styles/ag-grid.css';
 import 'ag-grid-community/dist/styles/ag-theme-alpine.css';
 import { PresetCellEditorFramework } from './Components';
-import { IEditAgGrid } from './index.d';
+import type { IEditAgGrid } from './index.d';
 
 const Thing: FC<IEditAgGrid> = props => {
   const { columnDefs } = props;
@@ -24,7 +24,7 @@ const Thing: FC<IEditAgGrid> = props => {
   }, [columnDefs]);
 
   return (
-    <div className="ag-theme-alpine">
+    <div className="ag-theme-alpine test">
       <AgGridReact
         // stopEditingWhenGridLosesFocus
         singleClickEdit
