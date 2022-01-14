@@ -15,6 +15,9 @@
     "react-dom": "../node_modules/react-dom",
     "scheduler/tracing": "../node_modules/scheduler/tracing-profiling"
   },
+  "targets": {
+    "main": true
+  },
   "devDependencies": {
     "@types/react": "^16.9.11",
     "@types/react-dom": "^16.8.4",
