@@ -18,6 +18,7 @@ const Thing: FC<IEditAgGrid> = props => {
       return {
         cellEditorFramework: editable ? PresetCellEditorFramework : undefined,
         editable,
+        resizable: true,
         ...col,
       };
     });
