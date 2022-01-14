@@ -19,6 +19,12 @@ input、inputNumber、select、date、autoComplete等
 ### 2、缓存
 利用缓存提升性能优化
 
+#### a.缓存传入组件方式
+
+使用cellRendererParams、cellEditorParams分别将缓存信息传入cellRendererFramework(非编辑状态)与cellEditorFramework(编辑状态)组件，提升scroll performance
+
+地址：https://www.ag-grid.com/react-data-grid/cell-editing/#dynamic-parameters
+
 ### 3、批量填充
 空值填充，选择值填充，全部填充
 
