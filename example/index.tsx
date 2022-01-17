@@ -5,9 +5,21 @@ import { render } from 'react-dom';
 import 'antd/dist/antd.min.css';
 
 import './index.less';
+import { useEffect, useState } from 'react';
 import Thing from '..';
 
 const App = () => {
+  const [tableData, setTableData] = useState<Record<string, any>[]>([]);
+  useEffect(() => {
+    const _tableData: Record<string, any>[] = [];
+    for (let i = 0; i < 100; i++) {
+      _tableData.push({
+        id: `id${i}`,
+      });
+    }
+    setTableData(_tableData);
+  }, []);
+
   return (
     <Thing
       columnDefs={[
@@ -16,7 +28,7 @@ const App = () => {
           headerName: '输入框',
           cellEditorParams: {
             editType: 'input',
-            cellHeight: '66px'
+            cellHeight: '66px',
           },
         },
         {
@@ -29,13 +41,13 @@ const App = () => {
             options: [
               {
                 key: 'male',
-                label: '男'
+                label: '男',
               },
               {
                 key: 'female',
-                label: '女'
-              }
-            ]
+                label: '女',
+              },
+            ],
           },
         },
         {
@@ -67,7 +79,7 @@ const App = () => {
           },
         },
       ]}
-      rowData={[{ id: '234' }]}
+      rowData={tableData}
     />
   );
 };

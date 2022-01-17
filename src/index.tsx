@@ -27,8 +27,15 @@ const Thing: FC<IEditAgGrid> = props => {
   return (
     <div className="ag-theme-alpine">
       <AgGridReact
-        // stopEditingWhenGridLosesFocus
+        stopEditingWhenGridLosesFocus
         singleClickEdit
+
+        // TODO LH debug
+        getRowHeight={(params: any) => {
+          const {node} = params;
+          return 30 + node.rowIndex;
+        }}
+      
         {...props}
         columnDefs={addRenderEditCol}
       />
