@@ -1,4 +1,17 @@
+@normalLineHeight: 38px;
 .edit-ag-grid-select {
-  // TODO cpt
   width: 100%;
+  line-height: @normalLineHeight;
+  .ant-select-selector {
+    line-height: inherit;
+    height: inherit !important;
+    .ant-select-selection-search {
+      input {
+        height: inherit;
+      }
+    }
+    .ant-select-selection-placeholder {
+      line-height: inherit;
+    }
+  }
 }
