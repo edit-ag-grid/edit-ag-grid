@@ -16,6 +16,7 @@ const App = () => {
           headerName: '输入框',
           cellEditorParams: {
             editType: 'input',
+            cellHeight: '66px'
           },
         },
         {
