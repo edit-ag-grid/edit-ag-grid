@@ -5,7 +5,7 @@ import './index.less';
 interface IProps {}
 
 const EditInput: FC<IProps> = () => {
-  return <Select autoFocus defaultOpen className="edit-ag-grid-select" />;
+  return <Select className="edit-ag-grid-select" />;
 };
 
 export default EditInput;

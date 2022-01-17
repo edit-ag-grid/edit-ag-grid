@@ -12,12 +12,12 @@ ag-grid(https://www.ag-grid.com/)
 ## 一、主要功能
 将按下列顺序逐步迭代
 
-### 1、通用编辑功能
+### 1、通用编辑功能 🚧
 常用的编辑表单
 input、inputNumber、select、date、autoComplete等
 
-### 2、缓存
-利用缓存提升性能优化
+### 2、缓存 ⚙️
+利用缓存提升性能优化 
 
 #### a.缓存传入组件方式
 
@@ -25,12 +25,12 @@ input、inputNumber、select、date、autoComplete等
 
 地址：https://www.ag-grid.com/react-data-grid/cell-editing/#dynamic-parameters
 
-### 3、批量填充
+### 3、批量填充 ⚙️
 空值填充，选择值填充，全部填充
 
-### 4、校验
+### 4、校验 ⚙️
 必填、最大、最小值、自定义校验
 
-### 5、自定义组件
+### 5、自定义组件 ⚙️
 
 支持自定义组件并能够同时使用缓存、填充、校验等功能

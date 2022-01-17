@@ -13,7 +13,6 @@ const App = () => {
       columnDefs={[
         {
           field: 'input',
-          colId: 'input',
           headerName: '输入框',
           cellEditorParams: {
             editType: 'input',
@@ -21,10 +20,37 @@ const App = () => {
         },
         {
           field: 'select',
-          colId: 'select',
           headerName: '选择框',
           cellEditorParams: {
             editType: 'select',
+          },
+        },
+        {
+          field: 'treeSelect',
+          headerName: '树形选择框',
+          cellEditorParams: {
+            editType: 'treeSelect',
+          },
+        },
+        {
+          field: 'datePicker',
+          headerName: '时间选择',
+          cellEditorParams: {
+            editType: 'datePicker',
+          },
+        },
+        {
+          field: 'autoComplete',
+          headerName: '自动完成',
+          cellEditorParams: {
+            editType: 'autoComplete',
+          },
+        },
+        {
+          field: 'cascader',
+          headerName: '级联选择器',
+          cellEditorParams: {
+            editType: 'cascader',
           },
         },
       ]}

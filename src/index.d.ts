@@ -1,6 +1,6 @@
 import { ColDef, GridOptions } from 'ag-grid-community';
 
-const EDIT_TYPE = ['input', 'select'] as const;
+const EDIT_TYPE = ['input', 'select', 'treeSelect', 'datePicker', 'autoComplete', 'cascader'] as const;
 export type EditType = typeof EDIT_TYPE[number];
 
 export type IEditParams = {

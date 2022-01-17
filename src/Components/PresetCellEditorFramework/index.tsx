@@ -5,11 +5,15 @@ import React, {
   useState,
 } from 'react';
 import { EditType } from '../../index.d';
-import { Input, Select } from '../PresetFormItems';
+import { Input, Select, TreeSelect, DatePicker, AutoComplete, Cascader } from '../PresetFormItems';
 
 const defaultFormItemMap = {
   input: Input,
   select: Select,
+  treeSelect: TreeSelect,
+  datePicker: DatePicker,
+  autoComplete: AutoComplete,
+  cascader: Cascader,
 };
 
 interface IProps {

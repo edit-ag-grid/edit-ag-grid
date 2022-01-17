@@ -13,7 +13,9 @@
   "alias": {
     "react": "../node_modules/react",
     "react-dom": "../node_modules/react-dom",
-    "scheduler/tracing": "../node_modules/scheduler/tracing-profiling"
+    "scheduler/tracing": "../node_modules/scheduler/tracing-profiling",
+    "ag-grid-community": "../node_modules/ag-grid-community",
+    "ag-grid-react": "../node_modules/ag-grid-react"
   },
   "targets": {
     "main": true
@@ -21,8 +23,6 @@
   "devDependencies": {
     "@types/react": "^16.9.11",
     "@types/react-dom": "^16.8.4",
-    "ag-grid-community": "25.2.1",
-    "ag-grid-react": "25.2.0",
     "parcel": "1.12.3",
     "typescript": "^3.4.5"
   }
