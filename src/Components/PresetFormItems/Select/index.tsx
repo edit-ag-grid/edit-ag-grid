@@ -5,7 +5,7 @@ interface SelectProps extends React.ComponentProps<typeof Select> { }
 
 const EditSelect: FC<SelectProps> = (props) => {
   console.log('select ', props)
-  return <Select {...props} autoFocus defaultOpen className="edit-ag-grid-select" />;
+  return <Select {...props} className="edit-ag-grid-select" />;
 }
 
 export default EditSelect;
