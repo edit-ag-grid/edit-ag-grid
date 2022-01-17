@@ -25,7 +25,7 @@ const Thing: FC<IEditAgGrid> = props => {
   }, [columnDefs]);
 
   return (
-    <div className="ag-theme-alpine test">
+    <div className="ag-theme-alpine">
       <AgGridReact
         // stopEditingWhenGridLosesFocus
         singleClickEdit
