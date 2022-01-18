@@ -2,12 +2,12 @@ import { TreeSelect } from 'antd';
 import React, { FC, useEffect, useRef, useState } from 'react';
 import './index.less';
 
+type TreeSelectRef = React.ComponentRef<typeof TreeSelect>;
 interface IProps {}
 
 const Temp: FC<IProps> = () => {
   const [open, setOpen] = useState<boolean>(false);
-  // TODO PT anyscript
-  const selectRef = useRef<any>();
+  const selectRef = useRef<TreeSelectRef>({} as TreeSelectRef);
   useEffect(() => {
     setTimeout(() => {
       setOpen(true);

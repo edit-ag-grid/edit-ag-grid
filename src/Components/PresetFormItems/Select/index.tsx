@@ -2,12 +2,12 @@ import React, { FC, useEffect, useRef, useState } from 'react';
 import { Select } from 'antd';
 import './index.less';
 
+type SelectRef = React.ComponentRef<typeof Select>;
 interface SelectProps extends React.ComponentProps<typeof Select> {}
 
 const EditSelect: FC<SelectProps> = () => {
   const [open, setOpen] = useState<boolean>(false);
-  // TODO PT anyscript
-  const selectRef = useRef<any>();
+  const selectRef = useRef<SelectRef>({} as SelectRef);
   useEffect(() => {
     setTimeout(() => {
       setOpen(true);

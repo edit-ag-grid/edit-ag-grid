@@ -2,12 +2,12 @@ import { AutoComplete as AntdAutoComplete } from 'antd';
 import React, { FC, useEffect, useRef, useState } from 'react';
 import './index.less';
 
+type AutoCompleteRef = React.ComponentRef<typeof AntdAutoComplete>;
 interface IProps {}
 
 const AutoComplete: FC<IProps> = () => {
   const [open, setOpen] = useState<boolean>(false);
-  // TODO PT anyscript
-  const selectRef = useRef<any>();
+  const selectRef = useRef<AutoCompleteRef>({} as AutoCompleteRef);
   useEffect(() => {
     setTimeout(() => {
       setOpen(true);
